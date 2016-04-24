@@ -33,27 +33,27 @@
         <p>
          <b>Got to love recoding your bruteforcer from Python to NodeJS</b><br>
           <code>
-            var bruteforcer = require('bruteforce');
-            var errorManager = require('errormanager');
-            if(bruteforcer.loaded)
-            {
-              bruterforcer.set({
-                target: 'X.X.X.X',
-                service: 'SSH'
-              }).callback(function(err, msg) {
-                if(err.yes == true) {
-                  errorManager.create({
-                    code: err.code,
-                    message: err.message
-                  }).output(function(data) {
-                    console.log(data);
-                  });
-                }
-                else {
-                  console.log(msg):
-                }
-              });
-            }
+            var bruteforcer = require('bruteforce');<br>
+            var errorManager = require('errormanager');<br>
+            if(bruteforcer.loaded)<br>
+            {<br>
+              bruterforcer.set({<br>
+                target: 'X.X.X.X',<br>
+                service: 'SSH'<br>
+              }).callback(function(err, msg) {<br>
+                if(err.yes == true) {<br>
+                  errorManager.create({<br>
+                    code: err.code,<br>
+                    message: err.message<br>
+                  }).output(function(data) {<br>
+                    console.log(data);<br>
+                  });<br>
+                }<br>
+                else {<br>
+                  console.log(msg);<br>
+                }<br>
+              });<br>
+            }<br>
           </code>
         </p>
       </section>
